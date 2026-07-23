@@ -1,0 +1,68 @@
+import type { PlanItem } from '@/types'
+
+export const mockPlansEn: PlanItem[] = [
+  {
+    id: 'sedentary-start',
+    icon: '🚶',
+    title: 'Sedentary Starter Plan',
+    duration: '4 weeks',
+    level: 'Beginner',
+    dailyTime: '20 min/day',
+    description: 'Perfect for long-time sitters with zero exercise foundation',
+    weeks: [
+      { weekNumber: 1, summary: 'Wake Up Body', dailyPlan: '15 min daily walk + 2 stretch sessions (morning/noon)' },
+      { weekNumber: 2, summary: 'Gradual Boost', dailyPlan: '20 min daily walk + 3 stretch sessions, try 1 brisk walk' },
+      { weekNumber: 3, summary: 'Rhythm Alternation', dailyPlan: 'Walk + brisk walk 25 min alternation, add 2 core workouts' },
+      { weekNumber: 4, summary: 'Habit Consolidation', dailyPlan: '30 min brisk walk + light strength training, keep 5 days/week' },
+    ],
+  },
+  {
+    id: 'light-cardio',
+    icon: '🏃',
+    title: 'Light Cardio Plan',
+    duration: '6 weeks',
+    level: 'Intermediate',
+    dailyTime: '30 min/day',
+    description: 'For those with walking habits looking to improve cardiorespiratory fitness',
+    weeks: [
+      { weekNumber: 1, summary: 'Cardio Intro', dailyPlan: '20 min brisk walk + 10 min jog alternation' },
+      { weekNumber: 2, summary: 'Extend Time', dailyPlan: '15 min brisk walk + 15 min jog alternation' },
+      { weekNumber: 3, summary: 'Intensify', dailyPlan: '20 min jog + 10 min brisk walk' },
+      { weekNumber: 4, summary: 'Pace Variation', dailyPlan: 'Intervals: 1 min sprint + 2 min jog, 8 cycles' },
+      { weekNumber: 5, summary: 'Endurance Building', dailyPlan: '25 min continuous jog + 5 min stretch' },
+      { weekNumber: 6, summary: 'Habit Formation', dailyPlan: '30 min free cardio (run/cycle/jump rope)' },
+    ],
+  },
+  {
+    id: 'posture-fix',
+    icon: '🧘',
+    title: 'Posture Correction Plan',
+    duration: '4 weeks',
+    level: 'Beginner',
+    dailyTime: '15 min/day',
+    description: 'Focus on neck, shoulders and lower back to fix office worker posture issues',
+    weeks: [
+      { weekNumber: 1, summary: 'Neck & Shoulder Relax', dailyPlan: '5 min neck stretch + 5 min shoulder circles + 5 min cat-cow' },
+      { weekNumber: 2, summary: 'Back Activation', dailyPlan: '5 min scapular squeeze + 5 min bent-over row mimic + 5 min child pose' },
+      { weekNumber: 3, summary: 'Core Stability', dailyPlan: '3 sets plank + 3 sets dead bug + 3 sets bird dog' },
+      { weekNumber: 4, summary: 'Comprehensive', dailyPlan: 'Pick 2 from each category, combine into 15 min workout' },
+    ],
+  },
+  {
+    id: 'core-awaken',
+    icon: '💪',
+    title: 'Core Strength Awakening',
+    duration: '6 weeks',
+    level: 'Intermediate',
+    dailyTime: '25 min/day',
+    description: 'Build core strength from zero, reduce lower back discomfort',
+    weeks: [
+      { weekNumber: 1, summary: 'Core Awareness', dailyPlan: '5 min belly breathing + 3 sets dead bug + 3 sets glute bridge' },
+      { weekNumber: 2, summary: 'Stability Training', dailyPlan: '3 sets plank + 2 sets side plank + 3 sets bird dog' },
+      { weekNumber: 3, summary: 'Strength Boost', dailyPlan: '3 sets crunch + 3 sets reverse crunch + 2 sets mountain climber' },
+      { weekNumber: 4, summary: 'Dynamic Stability', dailyPlan: '3 sets plank shoulder tap + 2 sets side plank rotation + 3 sets superman' },
+      { weekNumber: 5, summary: 'Integrated Training', dailyPlan: 'Circuit: 45 sec each move, 15 sec rest between' },
+      { weekNumber: 6, summary: 'Habit Solidification', dailyPlan: '25 min core HIIT: pick your own combos' },
+    ],
+  },
+]

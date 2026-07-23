@@ -1,0 +1,68 @@
+import type { PlanItem } from '@/types'
+
+export const mockPlans: PlanItem[] = [
+  {
+    id: 'sedentary-start',
+    icon: '🚶',
+    title: '久坐族起步计划',
+    duration: '4周',
+    level: '入门级',
+    dailyTime: '每日20分钟',
+    description: '适合长期久坐、零运动基础的人群',
+    weeks: [
+      { weekNumber: 1, summary: '唤醒身体', dailyPlan: '每日散步15分钟 + 2组拉伸（晨间/午间各1组）' },
+      { weekNumber: 2, summary: '逐步提升', dailyPlan: '每日散步20分钟 + 3组拉伸，尝试1次快走' },
+      { weekNumber: 3, summary: '节奏交替', dailyPlan: '散步+快走交替25分钟，加入2次核心训练' },
+      { weekNumber: 4, summary: '习惯巩固', dailyPlan: '快走30分钟 + 简单力量训练，保持每周5天' },
+    ],
+  },
+  {
+    id: 'light-cardio',
+    icon: '🏃',
+    title: '轻量有氧养成计划',
+    duration: '6周',
+    level: '进阶级',
+    dailyTime: '每日30分钟',
+    description: '适合已有散步习惯，想提升心肺功能',
+    weeks: [
+      { weekNumber: 1, summary: '有氧入门', dailyPlan: '快走20分钟 + 慢跑10分钟交替' },
+      { weekNumber: 2, summary: '时间延长', dailyPlan: '快走15分钟 + 慢跑15分钟交替' },
+      { weekNumber: 3, summary: '强度提升', dailyPlan: '慢跑20分钟 + 快走10分钟' },
+      { weekNumber: 4, summary: '节奏变化', dailyPlan: '间歇跑：快跑1分钟+慢跑2分钟，循环8组' },
+      { weekNumber: 5, summary: '耐力建设', dailyPlan: '连续慢跑25分钟 + 拉伸5分钟' },
+      { weekNumber: 6, summary: '习惯养成', dailyPlan: '30分钟自由有氧（跑步/骑行/跳绳）' },
+    ],
+  },
+  {
+    id: 'posture-fix',
+    icon: '🧘',
+    title: '体态改善计划',
+    duration: '4周',
+    level: '入门级',
+    dailyTime: '每日15分钟',
+    description: '专注肩颈腰背，改善办公族常见体态问题',
+    weeks: [
+      { weekNumber: 1, summary: '肩颈放松', dailyPlan: '颈部拉伸5分钟 + 肩部环绕5分钟 + 猫牛式5分钟' },
+      { weekNumber: 2, summary: '背部激活', dailyPlan: '肩胛骨收缩5分钟 + 俯身划船模拟5分钟 + 婴儿式5分钟' },
+      { weekNumber: 3, summary: '核心稳定', dailyPlan: '平板支撑3组 + 死虫式3组 + 鸟狗式3组' },
+      { weekNumber: 4, summary: '综合巩固', dailyPlan: '以上动作各选2个，组合15分钟训练' },
+    ],
+  },
+  {
+    id: 'core-awaken',
+    icon: '💪',
+    title: '核心力量唤醒计划',
+    duration: '6周',
+    level: '进阶级',
+    dailyTime: '每日25分钟',
+    description: '从零开始建立核心力量，减少腰背不适',
+    weeks: [
+      { weekNumber: 1, summary: '核心感知', dailyPlan: '腹式呼吸5分钟 + 死虫式3组 + 臀桥3组' },
+      { weekNumber: 2, summary: '稳定训练', dailyPlan: '平板支撑3组 + 侧平板2组 + 鸟狗式3组' },
+      { weekNumber: 3, summary: '力量提升', dailyPlan: '卷腹3组 + 反向卷腹3组 + 登山者2组' },
+      { weekNumber: 4, summary: '动态稳定', dailyPlan: '平板支撑交替抬手3组 + 侧平板转体2组 + 超人式3组' },
+      { weekNumber: 5, summary: '综合训练', dailyPlan: '以上动作循环训练，每个动作45秒，休息15秒' },
+      { weekNumber: 6, summary: '习惯固化', dailyPlan: '25分钟核心HIIT：自选动作组合训练' },
+    ],
+  },
+]
